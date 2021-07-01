@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class ClienteController extends Controller
 {
+    public function index()
+    {
+        // obtém todos os livros cadastrados
+        $clientes = Cliente::all();
+
+        // direciona para a view e fornece um vetor
+        // contendo os livros
+        return view('clientes.index', compact('clientes'));
+    }
+
     // mostra a view para cadastrar um novo Cliente
     public function create()
     {
