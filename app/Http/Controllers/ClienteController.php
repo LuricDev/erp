@@ -9,11 +9,11 @@ class ClienteController extends Controller
 {
     public function index()
     {
-        // obtém todos os livros cadastrados
+        // obtém todos os clientes cadastrados
         $clientes = Cliente::all();
 
         // direciona para a view e fornece um vetor
-        // contendo os livros
+        // contendo os clientes
         return view('clientes.index', compact('clientes'));
     }
 
@@ -43,5 +43,17 @@ class ClienteController extends Controller
         // com uma mensagem de sucesso
         return redirect()->route('clientes.create')
             ->with('mensagem', 'Cliente salvo com sucesso.');
+    }
+
+    // método que permite excluir um cliente
+    public function destroy(Cliente $cliente)
+    {
+        // vamos chamar o método delete() do Eloquent
+        $cliente->delete();
+
+        // vamos chamar a view com uma mensagem de
+        // de sucesso.
+        return redirect()->route('clientes.index')
+            ->with('mensagem', 'Cliente excluído com sucesso.');
     }
 }
