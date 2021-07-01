@@ -45,7 +45,7 @@
 
                     <button type="submit">Excluir</button>
                 </form>
-            </td>
+                        
         </tr>
         @endforeach
 
