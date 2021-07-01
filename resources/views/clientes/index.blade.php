@@ -21,8 +21,8 @@
             <td width="85" align="center"><strong>Id</strong></td>
             <td width="161" align="center"><strong>Nome</strong></td>
             <td width="156" align="center"><strong>E-mail</strong></td>
-            <td width="98" align="center"><strong>Telefone</strong></td>
-            <td width="98" align="center"><strong>Celular</strong></td>
+            <td width="156" align="center"><strong>Telefone</strong></td>
+            <td width="156" align="center"><strong>Celular</strong></td>
             <td width="175" align="center"><strong>Opções</strong></td>
         </tr>
 
