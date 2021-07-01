@@ -23,7 +23,7 @@
             <td width="156" align="center"><strong>E-mail</strong></td>
             <td width="98" align="center"><strong>Telefone</strong></td>
             <td width="98" align="center"><strong>Celular</strong></td>
-            <td width="167" align="center"><strong>Opções</strong></td>
+            <td width="175" align="center"><strong>Opções</strong></td>
         </tr>
 
         @foreach($clientes as $cliente)
