@@ -16,7 +16,7 @@
     <h4><a href="{{ route('clientes.create') }}">Cadastrar
             Novo Cliente</a></h4>
 
-    <table width="1000" border="1" cellspacing="0" cellpadding="3">
+    <table width="889" border="1" cellspacing="0" cellpadding="3">
         <tr>
             <td width="85" align="center"><strong>Id</strong></td>
             <td width="161" align="center"><strong>Nome</strong></td>
