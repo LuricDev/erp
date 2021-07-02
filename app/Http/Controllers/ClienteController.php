@@ -52,6 +52,12 @@ class ClienteController extends Controller
         return view('clientes.show', compact('cliente'));
     }
 
+    // permite editar o livro recebido como argumento
+    public function edit(Cliente $cliente)
+    {
+        // chama a view e passa o livro para ela
+        return view('clientes.edit', compact('cliente'));
+    }
 
     // método que permite excluir um cliente
     public function destroy(Cliente $cliente)
