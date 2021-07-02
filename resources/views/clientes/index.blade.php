@@ -32,7 +32,7 @@
             <td>{{ $cliente->nome }}</td>
             <td>{{ $cliente->email }}</td>
             <td>{{ $cliente->telefone }}</td>
-            <td align="center">{{ $cliente->celular }}</td>
+            <td>{{ $cliente->celular }}</td>
             <td align="center">
                 <form action="{{ route('clientes.destroy', $cliente->id) }}" method="post">
                     <a href="{{ route('clientes.show', 
