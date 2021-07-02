@@ -16,14 +16,14 @@
     <h4><a href="{{ route('clientes.create') }}">Cadastrar
             Novo Cliente</a></h4>
 
-    <table width="890" border="1" cellspacing="0" cellpadding="3">
+    <table width="900" border="1" cellspacing="0" cellpadding="3">
         <tr>
             <td width="85" align="center"><strong>Id</strong></td>
             <td width="161" align="center"><strong>Nome</strong></td>
             <td width="156" align="center"><strong>E-mail</strong></td>
             <td width="156" align="center"><strong>Telefone</strong></td>
             <td width="156" align="center"><strong>Celular</strong></td>
-            <td width="175" align="center"><strong>Opções</strong></td>
+            <td width="186" align="center"><strong>Opções</strong></td>
         </tr>
 
         @foreach($clientes as $cliente)
