@@ -45,6 +45,14 @@ class ClienteController extends Controller
             ->with('mensagem', 'Cliente salvo com sucesso.');
     }
 
+    // vamos mostrar os detalhes do cliente informado
+    // como argumento
+    public function show(Cliente $cliente)
+    {
+        return view('clientes.show', compact('cliente'));
+    }
+
+
     // método que permite excluir um cliente
     public function destroy(Cliente $cliente)
     {
