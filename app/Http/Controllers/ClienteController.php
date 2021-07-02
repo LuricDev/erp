@@ -52,11 +52,30 @@ class ClienteController extends Controller
         return view('clientes.show', compact('cliente'));
     }
 
-    // permite editar o livro recebido como argumento
+    // permite editar o cliente recebido como argumento
     public function edit(Cliente $cliente)
     {
         // chama a view e passa o livro para ela
         return view('clientes.edit', compact('cliente'));
+    }
+
+    // permite atualizar os dados de um livro
+    public function update(Request $request, Cliente $cliente)
+    {
+        // vamos validar os dados vindo do formulário
+        $request->validate([
+            'nome' => 'required',
+            'email' => 'required',
+            'telefone' => 'required',
+            'celular' => 'required'
+        ]);
+
+        // vamos atualizar o livro na tabela do banco de dados
+        $cliente->update($request->all());
+
+        // agora vamos voltar para a listagem de livros
+        return redirect()->route('clientes.index')
+            ->with('mensagem', 'Cliente atualizado com sucesso.');
     }
 
     // método que permite excluir um cliente
