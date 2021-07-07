@@ -59,7 +59,7 @@ class ClienteController extends Controller
         return view('clientes.edit', compact('cliente'));
     }
 
-    // permite atualizar os dados de um livro
+    // permite atualizar os dados de um cliente
     public function update(Request $request, Cliente $cliente)
     {
         // vamos validar os dados vindo do formulário
@@ -73,7 +73,7 @@ class ClienteController extends Controller
         // vamos atualizar o livro na tabela do banco de dados
         $cliente->update($request->all());
 
-        // agora vamos voltar para a listagem de livros
+        // agora vamos voltar para a listagem de clientes
         return redirect()->route('clientes.index')
             ->with('mensagem', 'Cliente atualizado com sucesso.');
     }
